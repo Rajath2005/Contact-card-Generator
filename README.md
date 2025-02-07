@@ -56,13 +56,7 @@ A web application to generate customizable contact cards with user details, soci
     - Go to the original repository on GitHub.
     - Click on the "Pull Requests" tab.
     - Click the "New Pull Request" button.
-    - Select the branch with your changes and create the pull request.
-
-## Image of the Website
-
-
-![Website Preview](image.png)
-
+    - Select the branch with your changes and create the pull request
 
 ## License
 
