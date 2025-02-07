@@ -61,8 +61,8 @@ A web application to generate customizable contact cards with user details, soci
 ## Image of the Website
 
 
-!Website Preview
 image.png
+
 
 ## License
 
