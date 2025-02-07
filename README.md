@@ -2,7 +2,7 @@
 
 A web application to generate customizable contact cards with user details, social links, and themes. Users can enter their information, select a theme, and download their contact card as an image.
 
-!Website Preview
+![Website Preview](image.png)
 
 ## How It Works
 
@@ -61,7 +61,7 @@ A web application to generate customizable contact cards with user details, soci
 ## Image of the Website
 
 
-image.png
+![Website Preview](image.png)
 
 
 ## License
