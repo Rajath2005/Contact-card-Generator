@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Card Generator</h1>
+    </div>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Enter Your Details</h2>
+            
+            <div class="input-group">
+                <label for="profile-upload">Upload Profile Picture</label>
+                <input type="file" id="profile-upload" accept="image/*">
+            </div>
+
+            <div class="input-group">
+                <label>Select Theme</label>
+                <div class="theme-selector">
+                    <div class="theme-option active" data-theme="purple-gradient">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                    </div>
+                    <div class="theme-option" data-theme="blue-gradient">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%)"></div>
+                    </div>
+                    <div class="theme-option" data-theme="dark-gradient">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe">
+            </div>
+
+            <div class="input-group">
+                <label for="profession">Profession</label>
+                <input type="text" id="profession" placeholder="Web Developer">
+            </div>
+
+            <div class="input-group">
+                <label for="website">Website</label>
+                <input type="url" id="website" placeholder="https://example.com">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@example.com">
+            </div>
+
+            <div class="input-group">
+                <label for="about">A Little Bit About You</label>
+                <textarea id="about" placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="services">Services Offered</label>
+                <textarea id="services" placeholder="List your services..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="linkedin">LinkedIn Link</label>
+                <input type="url" id="linkedin" placeholder="https://linkedin.com/in/username">
+            </div>
+
+            <div class="input-group">
+                <label for="github">GitHub Link</label>
+                <input type="url" id="github" placeholder="https://github.com/username">
+            </div>
+
+            <div class="input-group">
+                <label for="instagram">Instagram Link</label>
+                <input type="url" id="instagram" placeholder="https://instagram.com/username">
+            </div>
+
+            <div class="input-group">
+                <label for="facebook">Facebook Link</label>
+                <input type="url" id="facebook" placeholder="https://facebook.com/username">
+            </div>
+
+            <div class="buttons">
+                <button class="button secondary" id="reset-btn">Reset</button>
+                <button class="button" id="download-btn">Download Card</button>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="card-preview" id="card-preview">
+                <div class="profile-pic">
+                    <img src="/api/placeholder/120/120" alt="Profile" id="preview-pic">
+                </div>
+                <div class="card-content">
+                    <h2 id="preview-name">Your Name</h2>
+                    <p id="preview-profession">Your Profession</p>
+                    
+                    <div class="social-links">
+                        <a href="#" id="preview-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" id="preview-github" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" id="preview-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" id="preview-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+
+                    <div class="card-details">
+                        <p><strong>Email:</strong> <span id="preview-email">email@example.com</span></p>
+                        <p><strong>Website:</strong> <span id="preview-website">www.example.com</span></p>
+                        <p><strong>About:</strong> <span id="preview-about">Tell us about yourself...</span></p>
+                        <p><strong>Services:</strong> <span id="preview-services">Your services...</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
